@@ -6,6 +6,13 @@
         <title>Minha Primeira pagina</title>
    </head> 
    <body>
+     <nav>
+          <ul>
+               <li>Home</li>
+               <li>Contatos</li>
+               <li>Quem somos</li>
+          </ul>
+     </nav>
      <header id="header"> 
           <h1>Esporte <em>Interativo</em></h1>
      </header>
@@ -29,7 +36,7 @@
 
      <section>
           <h2>Tabela de Jogos</h2>
-          <table border="10">
+          <table>
                <tr>
                     <th>Time</th>
                     <th>Pontos</th>
@@ -40,8 +47,42 @@
                     <td>52</td>
                     <td>25</td>
                </tr>
+               <tr>
+                    <td>Real Madri</td> 
+                    <td>60</td>
+                    <td>45</td>
+               </tr>
+               <tr>
+                    <td colspan="3">Total de Equipes</td>
+               </tr>
           </table>
+     </section>
+     <section>
+          <ol>
+               <li>Arroz</li>
+               <li>Feijão</li>
+               <li>Batata</li>
+          </ol>
+     </section>
 
+     <section>
+          <a href="http://google.com">
+               <img src="../src/img/apple.svg" alt="Uma maçã" width="50">
+          </a>
+
+          <figure>
+               <img src="../src/img/meadow.jpg" width="400" alt="Galo" title="Galo">
+               <figcaption>Legenda: Um galo</figcaption>
+          </figure>
+     </section>
+     <section>
+          <form action="../src/futebol.html">
+               <div>
+                    <label for="nome">Nome:</label>  
+                    <input type="text" id="nome" placeholder="Nome" name="nome">
+               </div>
+               <input type="submit" value="Enviar">
+          </form>
      </section>
      <footer></footer>
    </body>
