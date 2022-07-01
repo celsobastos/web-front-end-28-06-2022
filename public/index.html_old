@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <!-- head representa o cabeçalho da pagina -->
+   <head>
+        <meta charset="UTF-8">
+        <title>Minha Primeira pagina</title>
+        <link rel="icon" href="../src/img/fav-icon.png" type="image/png" sizes="16x16">
+   </head> 
+   <body>
+     <nav>
+          <ul>
+               <li>Home</li>
+               <li>Contatos</li>
+               <li>Quem somos</li>
+          </ul>
+          <button onclick="alert('test')">clique me</button>
+     </nav>
+     <header id="header"> 
+          <h1>Esporte <em>Interativo</em></h1>
+     </header>
+     <section>
+          <h2>Futebol</h2>
+          <p>
+               <a href="../src/futebol.html#header"> Esporte </a>que exige contato fisico.
+               <div>
+                    <a href="https://ge.globo.com/" target="_blank" title="Esporte">leia mais</a>
+               </div>
+          </p>
+          
+          <h3>Futebol Amador</h3>
+          <p>Esporte que exige contato fisico.</p>
+          <h4>Futsal</h4>
+          <p>Esporte que exige contato fisico.</p>
+          <h3>Futebol Profissional</h3>
+          <hr>
+          <a href="#header">Ir para header</a>
+     </section>
+
+     <section>
+          <h2>Tabela de Jogos</h2>
+          <table>
+               <tr>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                    <th>Vitórias</th>
+               </tr>
+               <tr>
+                    <td>Barcelona</td> 
+                    <td>52</td>
+                    <td>25</td>
+               </tr>
+               <tr>
+                    <td>Real Madri</td> 
+                    <td>60</td>
+                    <td>45</td>
+               </tr>
+               <tr>
+                    <td colspan="3">Total de Equipes</td>
+               </tr>
+          </table>
+     </section>
+     <section>
+          <ol>
+               <li>Arroz</li>
+               <li>Feijão</li>
+               <li>Batata</li>
+          </ol>
+     </section>
+
+     <section>
+          <a href="http://google.com">
+               <img src="../src/img/apple.svg" alt="Uma maçã" width="50">
+          </a>
+
+          <figure>
+               <img src="../src/img/meadow.jpg" width="400" alt="Galo" title="Galo">
+               <figcaption>Legenda: Um galo</figcaption>
+          </figure>
+     </section>
+     <section>
+          <form action="../src/futebol.html" method="get">
+               <fieldset>
+                    <legend>Cadastro de Alunos</legend>
+                    <div>
+                         email <input type="email">
+                         <label for="nome">Nome:</label>  
+                         <input disabled type="text" id="nome" placeholder="Nome" name="nome" required>
+                    </div>
+                    <div>
+                         <label for="senha">Senha</label>
+                         <input type="password" id="senha" name="senha">
+                    </div>
+                    <div>
+                         <label for="estado">Estado</label>
+                         <select name="estado" id="estado">
+                              <option value="sp"> São Paulo </option>
+                              <option value="rj" selected> Rio de Janeiro </option>
+                              <option value="mg"> Minas Gerais </option>
+                         </select>
+                    </div>
+                    <div>
+                       <input type="checkbox" checked value="contrato" name="contrato"> Contrato
+                       <input type="checkbox" checked value="Cokies" name="Cokies"> Cokies
+                    </div>
+                    <div>
+                         <input type="radio" name="curso" value="ingles">Inglês
+                         <input type="radio" name="curso" value="Espanhol">Espanhol
+                    </div>
+                    <div>
+                         <label for="Contrato">Contrato</label>
+                         <textarea name="contrato" id="Contrato" cols="50" rows="5">
+                          Este é o meu contrato
+                         </textarea>
+                    </div>
+                    <input type="color">
+
+                    <input type="submit" value="Enviar">
+               </fieldset>
+          </form>
+     </section>
+     <section>
+
+          <iframe src="../src/futebol.html"></iframe>
+          <iframe width="747" height="420" src="https://www.youtube.com/embed/UDVr3ab3NVM" title="Marília Mendonça & Maiara e Maraisa - Todo Mundo Menos Você" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6538741552904!2d-46.643123200000005!3d-23.5449484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584e44894c4d%3A0xb3c2d4bb888b2165!2sAv.%20Ipiranga%2C%2025%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003026-005!5e0!3m2!1spt-BR!2sbr!4v1656636670710!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+
+     <section>
+          &lt;html&gt;
+          &reg;
+          <video src="../src/videos/bear.ogg" controls>
+               <source src="../src/videos/bear.ogg">
+               <source src="../src/videos/mov_bbb.mp4">
+               <p>Seu computador não suporta este video</p>
+               <a href="../src/videos/bear.mp4">Download</a>
+          </video>
+     </section>
+     <section>
+          <audio controls>
+               <source src="../src/audio/horse.ogg">
+               <source src="../src/audio/horse.mp3">
+               <p>audio não pode ser reproduzido</p>
+          </audio>
+     </section>
+
+     <footer></footer>
+   </body>
+</html>
