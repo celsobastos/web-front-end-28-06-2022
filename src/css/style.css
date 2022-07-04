@@ -1,4 +1,49 @@
 /* Minha folha de estilo */
-p {
-    color: rgb(17, 47, 3)
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Oleo Script', cursive;
+}
+
+body {
+    background-image: url(../img/meadow.jpg);
+    background-size: cover;
+}
+
+
+
+nav div.menu {
+    display: flex;
+    background-color: #00000022;
+    justify-content: space-between;
+}
+
+nav div.logo-tipo a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul.servicos {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul.servicos > li > a {
+    text-decoration: none ;
+    padding: 10px;
+    display: block;
+    margin-left: 2px;
+    color: rgb(0, 145, 255);
+}
+
+nav ul.servicos > li > a:hover {
+    background-color: rgb(253, 253, 253);
+    text-decoration: underline;
+    font-weight: bold;
+    color: blue;
 } 
+
