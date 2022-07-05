@@ -51,14 +51,16 @@ html {
     list-style-type: none;
 }
 
+.main-nav ul.servicos > li {
+    padding: 15px 0;
+    margin-left: 15px;
+}
+
 .main-nav ul.servicos > li > a {
     text-decoration: none ;
-    padding: 15px 0;
     display: block;
-    margin-left: 2px;
     color: #999;
     font-size: 1rem;
-    margin: 0 15px;
 }
 
 .main-nav ul.servicos > li > a:hover {
@@ -70,14 +72,24 @@ html {
 /* Fim do menu de navegação */
 
 
-
-header {
-    width: 100%;
-    display: flex;
+.btn {
+    display: block;
+    font-weight: bold;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0300b9;
+    padding: 0.3rem 0.3rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 4px;
+    border: transparent;
 }
 
+
+/*
 header div {
-    /*
     text-align: justify;
     text-decoration: underline; 
     text-transform: uppercase;
@@ -98,14 +110,8 @@ header div {
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 300px 200px;
-    */
-
-    width: 150px;
-    margin: auto;
-    font-size: 5rem;
 }
 
-/*
 header div:last-child {
     border: 30px solid #ff0000;
     color: #ffffff;
