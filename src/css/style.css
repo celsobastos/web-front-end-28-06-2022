@@ -1,7 +1,8 @@
 /* Minha folha de estilo */
 :root {
     --fn-red : #da0404;
-    --fn-font: 30px;
+    --fn-font: 20px;
+    --fn-black: #000;
 }
 
 * {
@@ -25,44 +26,50 @@ html {
     margin: auto;
 }
 
-nav {
+.main-nav {
     background-color: #ffffff;
     box-shadow: 1px 1px 5px;
 }
 
-nav div.menu {
+.main-nav div.menu {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
 }
 
-nav div.logo-tipo a {
-    color: var(--fn-red);
+.main-nav div.logo-tipo a {
+    color: var(--fn-black);
     display: block;
-    padding: 10px;
+    padding: 10px 0;
     text-decoration: none;
     font-family: pepper;
     font-size: 1.5rem;
 }
 
-nav ul.servicos {
+.main-nav ul.servicos {
     display: flex;
     list-style-type: none;
 }
 
-nav ul.servicos > li > a {
+.main-nav ul.servicos > li > a {
     text-decoration: none ;
-    padding: 10px;
+    padding: 15px 0;
     display: block;
     margin-left: 2px;
-    color: var(--fn-red);
+    color: #999;
+    font-size: 1rem;
+    margin: 0 15px;
 }
 
-nav ul.servicos > li > a:hover {
-    background-color: rgb(253, 253, 253);
-    text-decoration: underline;
+.main-nav ul.servicos > li > a:hover {
+    text-decoration: none;
     font-weight: bold;
-    color: blue;
+    color: #6b6b6b;
 } 
+
+/* Fim do menu de navegação */
+
+
 
 header {
     width: 100%;
