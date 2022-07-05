@@ -1,28 +1,47 @@
 /* Minha folha de estilo */
+:root {
+    --fn-red : #da0404;
+    --fn-font: 30px;
+}
+
 * {
     margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: pepper;
+    src: url(../fonts/pepper-sauce.ttf);
 }
 
 html {
     font-family: 'Roboto Mono', monospace;
+    font-size: var(--fn-font);
 }
 
-body {
-    background-image: url(../img/meadow.jpg);
-    background-size: cover;
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px;
 }
 
 nav div.menu {
     display: flex;
-    background-color: #00000022;
     justify-content: space-between;
 }
 
 nav div.logo-tipo a {
-    color: #ffffff;
+    color: var(--fn-red);
     display: block;
     padding: 10px;
     text-decoration: none;
+    font-family: pepper;
+    font-size: 1.5rem;
 }
 
 nav ul.servicos {
@@ -35,7 +54,7 @@ nav ul.servicos > li > a {
     padding: 10px;
     display: block;
     margin-left: 2px;
-    color: rgb(0, 145, 255);
+    color: var(--fn-red);
 }
 
 nav ul.servicos > li > a:hover {
@@ -44,4 +63,54 @@ nav ul.servicos > li > a:hover {
     font-weight: bold;
     color: blue;
 } 
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header div {
+    /*
+    text-align: justify;
+    text-decoration: underline; 
+    text-transform: uppercase;
+    line-height: 30px;
+    width: 50%;
+    word-wrap: break-word;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid #000; 
+    border-left: double 2px #ff0000;
+    border: 5px solid #0000ff;
+    border-radius: 10px 50px 30px 80px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 5px #29cd10, 10px 10px 5px #ff0000;
+    text-shadow: 1px 1px 1px #ff0000;
+    background: linear-gradient(to right, #0000ff, #e60f90, #c9f11a);
+    background: #54ff05 url(../img/paris.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    */
+
+    width: 150px;
+    margin: auto;
+    font-size: 5rem;
+}
+
+/*
+header div:last-child {
+    border: 30px solid #ff0000;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 300px;
+    padding: 10px 20px 30px 40px;
+    padding: 10px 50px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin: 10px 20px 30px 40px;
+    margin: 10px 20px;
+}
+*/
 
