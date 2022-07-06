@@ -136,6 +136,8 @@ o conteudo central do site
 */
 
 .tvt {
+    background-color: #0004ff;
+    color: #ffffff;
     padding:200px;
     margin: 0 auto;
     border: #000 1px solid;
@@ -145,8 +147,8 @@ o conteudo central do site
     /* animation: airplane 2s 5; */
     animation-duration: 2s;
     animation-name: airplane;
-    animation-iteration-count: infinite;
-    /*animation-timing-function: ease-in-out;*/
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
     animation-delay: 2s;
 }
 
@@ -160,12 +162,8 @@ o conteudo central do site
         background-position: 200% 100%;  
     }
 
-    50% {
-        background-position: -200% 0%;
-    }
-
     100% {
-        background-position: 200% 100%; 
+        background-position: -200% 0%;
     }
 }
 
