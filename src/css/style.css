@@ -144,13 +144,11 @@ o conteudo central do site
 }
 
 @keyframes cor-fundo {
-    0% {
-        background-color: #0004ff;
-    }
-
-    100% {
-        background-color: #d9ff00;
-    }
+    0% {background-color: #0004ff;}
+    25% {background-color: #ff00f7;}
+    50% {background-color: #e60e0e;}
+    75% {background-color: #04ffde;}
+    100% {background-color: #d9ff00;}
 }
 
 .tvt .container {
