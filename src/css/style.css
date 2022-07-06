@@ -155,10 +155,9 @@ o conteudo central do site
     color: #ffffff;
     padding:200px;
     margin: 0 auto;
-    border: #000 1px solid;
     background-image: url(../img/airplane.png);
     background-repeat: no-repeat;
-    background-position: 200% 100%;
+    background-position: 250% 100%;
     /* animation: airplane 2s 5; */
     animation-duration: 2s;
     animation-name: airplane;
@@ -174,11 +173,11 @@ o conteudo central do site
 
 @keyframes airplane {
     0% {
-        background-position: 200% 100%;  
+        background-position: 250% 100%;  
     }
 
     100% {
-        background-position: -200% 0%;
+        background-position: -250% 0%;
     }
 }
 
