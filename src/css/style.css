@@ -22,7 +22,7 @@ html {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -151,9 +151,9 @@ o conteudo central do site
     100% {background-color: #d9ff00;}
 }
 
-.tvt .container {
+.tvt .animation-airplan {
     color: #ffffff;
-    padding:200px;
+    padding: 100px 200px;
     margin: 0 auto;
     background-image: url(../img/airplane.png);
     background-repeat: no-repeat;
