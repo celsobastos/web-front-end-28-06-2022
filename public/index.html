@@ -22,7 +22,7 @@
                 <ul class="servicos">
                     <li><a href="#">Recursos</a></li>
                     <li><a href="#">Download</a></li>
-                    <li><button class="btn">Enviar Feedback</button></li>
+                    <li><button onclick="document.querySelector('.container-overlay').style.display = 'block'" class="btn">Enviar Feedback</button></li>
                 </ul>
             </div>
         </div>
@@ -39,5 +39,12 @@
             Meu footer
         </div>
     </footer>
+    <div class="container-overlay" onclick="document.querySelector('.container-overlay').style.display = 'none'">
+        <div class="overlay">
+            <div class="feedback">
+                <span>Minha caixa de overlay</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
