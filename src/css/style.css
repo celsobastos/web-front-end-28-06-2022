@@ -134,9 +134,26 @@ html {
 <aside> usado para inserção de informação que não está vunculada com 
 o conteudo central do site
 */
-
 .tvt {
     background-color: #0004ff;
+    animation-duration: 5s;
+    animation-name: cor-fundo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes cor-fundo {
+    0% {
+        background-color: #0004ff;
+    }
+
+    100% {
+        background-color: #d9ff00;
+    }
+}
+
+.tvt .container {
     color: #ffffff;
     padding:200px;
     margin: 0 auto;
