@@ -181,7 +181,18 @@ o conteudo central do site
     }
 }
 
+/* header */
+.header {
+    padding-top: 100px;
+}
 
+.row {
+    display: flex;
+}
+
+.col {
+    border: #000 2px solid;
+}
 
 
 
