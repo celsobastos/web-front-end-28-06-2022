@@ -21,10 +21,32 @@ html {
     font-size: var(--fn-font);
 }
 
+
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    background-color: #04ffde;
 }
+
+/* breakpoint */
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu-servicos {
+        display: none;
+    }
+}
+
 
 .main-nav {
     background-color: #ffffff;
@@ -188,10 +210,20 @@ o conteudo central do site
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
     border: #000 2px solid;
+}
+
+.device-border {
+    max-width: 300px;
+    width: 100%;
+}
+
+video {
+    max-width: 300px;
 }
 
 
