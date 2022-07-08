@@ -255,7 +255,8 @@ o conteudo central do site
 }
 
 video {
-    max-width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 
