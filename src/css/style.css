@@ -41,7 +41,7 @@ html {
 }
 */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .menu-servicos {
         display: none;
     }
@@ -320,4 +320,14 @@ header div:last-child {
     margin: 10px 20px;
 }
 */
+
+.icon-pseudo-element {
+    position: relative;
+}
+
+.icon-pseudo-element::after {
+    content: "\e409";
+    position: absolute;
+    background-color: rgb(87, 24, 24);
+}
 
