@@ -116,7 +116,7 @@ html {
 
 @media screen and (max-width: 992px) {
     .menu-servicos {
-        display: block;
+        display: none;
     }
 
     .main-nav .menu {
@@ -130,7 +130,6 @@ html {
         flex-direction: column;
         width: 100%;
         align-items: center;
-        padding: 0 50px;
     }
 
     .menu-servicos .servicos .fechar::after {
@@ -142,12 +141,21 @@ html {
         right: 0;
         top: 0;
         font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .menu-servicos .servicos .btn {
+        padding: 20px 25px;
+        width: 100%;
+        line-height: 20px;
     }
 }
 
 
 @media screen and (min-width: 992px) {
-
+    .mobile-icon {
+        display: none;
+    }
 }
 
 
