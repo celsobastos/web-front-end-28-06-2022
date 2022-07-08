@@ -41,12 +41,6 @@ html {
 }
 */
 
-@media screen and (max-width: 992px) {
-    .menu-servicos {
-        display: none;
-    }
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +114,23 @@ html {
     display: flex;
     list-style-type: none;
 }
+
+@media screen and (max-width: 992px) {
+    .menu-servicos {
+        display: none;
+    }
+    .menu-servicos .servicos {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+}
+
 
 .main-nav ul.servicos > li {
     margin-left: 15px;
@@ -320,14 +331,18 @@ header div:last-child {
     margin: 10px 20px;
 }
 */
-
+/* 
 .icon-pseudo-element {
     position: relative;
+} */
+.mobile::after {
+    /* content: "\e409"; */
+    content: "";
+    color: #da0404;
+    border: #000 1px solid;
 }
 
-.icon-pseudo-element::after {
-    content: "\e409";
-    position: absolute;
-    background-color: rgb(87, 24, 24);
+.material::after {
+    font-family: 'Material Icons';
+    content: "\e409";    
 }
-
