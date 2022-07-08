@@ -24,7 +24,6 @@ html {
 .container {
     width: 95%;
     margin: auto;
-    background-color: #04ffde;
 }
 
 /* breakpoint */
@@ -117,12 +116,32 @@ html {
 
 @media screen and (max-width: 992px) {
     .menu-servicos {
-        display: none;
+        display: block;
     }
-    .menu-servicos .servicos {
+
+    .main-nav .menu {
         display: flex;
-        list-style-type: none;
+        padding: 5px 0;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-servicos .servicos {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .menu-servicos .servicos .fechar::after {
+        content: 'X';
+        border: 1px rgb(108, 108, 108) solid;
+        padding: 2px 8px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.2rem;
     }
 }
 
