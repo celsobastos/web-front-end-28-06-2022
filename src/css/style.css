@@ -151,13 +151,11 @@ html {
     }
 }
 
-
 @media screen and (min-width: 992px) {
     .mobile-icon {
         display: none;
     }
 }
-
 
 .main-nav ul.servicos > li {
     margin-left: 15px;
