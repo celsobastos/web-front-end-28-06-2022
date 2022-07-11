@@ -25,11 +25,16 @@
                         <span class="fechar" onclick="document.querySelector('.mobile-icon').style.display = 'block'; document.querySelector('.menu-servicos').style.display = 'none'"></span>
                         <li><a href="#">Recursos</a></li>
                         <li><a href="#">Download</a></li>
-                        <li><button onclick="document.querySelector('.container-overlay').style.display = 'block'" class="btn">Enviar Feedback</button></li>
+                        <li>
+                            <button onclick="document.querySelector('.container-overlay').style.display = 'block'" class="btn">
+                                <span class="env"></span>
+                                <span>Enviar Feedback</span>
+                            </button>
+                        </li>
                     </ul>
                 </div>
                 <div class="mobile-icon">
-                    <button onclick="document.querySelector('.menu-servicos').style.display = 'block'" class="btn-mobile">Menu</button>
+                    <button onclick="document.querySelector('.menu-servicos').style.display = 'block';document.querySelector('.mobile-icon').style.display = 'none' " class="btn-mobile"></button>
                 </div>
             </div>
         </div>
