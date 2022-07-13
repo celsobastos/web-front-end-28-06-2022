@@ -112,8 +112,6 @@ let applyColor = new ApplyColor('#cor', '.home-page');
 applyColor.executeColor();
 
 
-
-
 let botao = document.querySelector('.botao');
 botao.addEventListener("click", (event) => {
 
