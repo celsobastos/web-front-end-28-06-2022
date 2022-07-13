@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Bem Vindo, Parceiro :) !</h1>
+                <p class="lead">Faça o seu cadastro para ter acesso ao melhor conteudo do Brasil.</p>
+                <hr class="my-4">
+              </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="alert alert-danger" role="alert"></div>
+        <form>
+            <div class="mb-3">
+              <label for="cep">Cep</label>
+              <input type="text" class="form-control" id="cep" placeholder="Digete seu cep">
+              <small id="cepHelp" class="form-text text-muted">Digite seu cep Ex:(00000-000)</small>
+            </div>
+            <div class="mb-3">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="complemento">Complemento</label>
+                <input type="text" class="form-control" id="complemento" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" disabled>
+            </div>
+              
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+    </div>
+  </body>
+</html>

@@ -100,33 +100,67 @@ em varias linhas
 
 
 /* validação e interatividade com formulário */
-
-let color = document.querySelector('#cor');
-let eventColor = () => {
-    let cor = color.value;
-    let body = document.querySelector('.home-page');
-    body.style.backgroundColor = cor;
-}
-
-// function test() {
+// let color = document.querySelector('#cor');
+// let eventColor = () => {
 //     let cor = color.value;
 //     let body = document.querySelector('.home-page');
 //     body.style.backgroundColor = cor;
 // }
+// color.addEventListener('input', eventColor);
 
-color.addEventListener('input', eventColor);
+let applyColor = new ApplyColor('#cor', '.home-page');
+applyColor.executeColor();
+
+
+
 
 let botao = document.querySelector('.botao');
 botao.addEventListener("click", (event) => {
 
     let caixa = document.querySelector('#texto');
     if (caixa.value === '') {
-        document.querySelector('.alvo').innerHTML =  'Caixa vazia';
+        const DIV = document.querySelector('.alvo');
+        DIV.innerHTML =  'Caixa vazia';
+        DIV.classList.add('error');
         event.preventDefault();
     }
-
-    
-
 });
 
+
+
 // console.dir();
+
+// let Pessoa = {
+//     altura: 1.75,
+//     nome: 'Pedro',
+//     printData : function () {
+//         return `${this.nome} ${this.altura}`;
+//     },
+//     salario : [800, 4000, {salarioLiq: 8000, salarioB: 9000}]
+// };
+
+// //Pessoa.nome = 'Carlos';
+
+// let nome = Pessoa.nome;
+// let altura = Pessoa.altura;
+// let data = Pessoa.printData();
+// let ultimoSalario = Pessoa.salario[2];
+// let salarioBruto = Pessoa.salario[2].salarioB;
+
+
+
+
+// let Operacao = function (nome, valor) {
+//     this.nome = nome;
+//     this.valor = valor;
+
+//     this.pegarValor = function () {
+//         return this.valor + this.nome ;
+//     };
+// } 
+
+// let operacao1 = new Operacao('Celso', 5000);
+// console.log(operacao1.pegarValor());
+
+// let operacao2 = new Operacao('Pedro', 10000);
+// console.log(operacao2.pegarValor());
