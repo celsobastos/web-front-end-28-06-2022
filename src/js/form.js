@@ -1,25 +1,32 @@
 "use strict"
 
 function buscarCep(cep) {
-    let dados = fetch(`https://viacep.com.br/ws/${cep}/json/`);
-    return dados;
+    return fetch(`https://viacep.com.br/ws/${cep}/json/`);
 }
 
-async function executeAll() {
+async function executar() {
+
+    let cep = document.querySelector("#cep").value;
+    let logradouro = document.querySelector("#logradouro");
+
     try {
-        const resposta =  await buscarCep('01312-001');
-        const data = await resposta.json();
-        console.log(data);
+        const resposta =  await buscarCep(cep);
+        const data  = await resposta.json();
+        logradouro.value = data.logradouro;
     }
     catch (error) {
-        console.error('não funcionou')
+        console.error('não funcionou');
     }
 }
 
-executeAll();
+
+executar();
 
 
 // let formControl = document.querySelectorAll('.form-control');
 // for(let i = 0; i < formControl.length; i++) {
 //     formControl[i].style.backgroundColor = '';
 // }
+
+//console.dir();
+
