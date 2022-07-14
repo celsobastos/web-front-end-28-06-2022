@@ -5,7 +5,6 @@ function buscarCep(cep) {
 }
 
 async function executar() {
-
     let cep = document.querySelector("#cep").value;
     let logradouro = document.querySelector("#logradouro");
 
@@ -19,8 +18,13 @@ async function executar() {
     }
 }
 
+let botao = document.querySelector('.btn');
+botao.addEventListener('click', (event) => {
+    executar();
+    event.preventDefault();
+});
 
-executar();
+
 
 
 // let formControl = document.querySelectorAll('.form-control');
