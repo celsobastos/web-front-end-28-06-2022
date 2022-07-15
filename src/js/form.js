@@ -1,42 +1,55 @@
 "use strict"
 
+
 function buscarCep(cep) {
     return fetch(`https://viacep.com.br/ws/${cep}/json/`);
 }
 
-async function executar() {
-    let cep = document.querySelector("#cep").value;
-    let logradouro = document.querySelector("#logradouro");
-    let complemento = document.querySelector("#complemento");
-    let bairro = document.querySelector("#bairro");
-
+async function execute(cep) {
     try {
-        let cache = sessionStorage.getItem('cep');
-        if (!cache || cache !== cep) {
-            sessionStorage.setItem('cep', cep);
-            const resposta =  await buscarCep(cep);
-            const data  = await resposta.json();
-            logradouro.value = data.logradouro;
-            complemento.value = data.complemento;
-            bairro.value = data.bairro;
-        }
+        const resposta =  await buscarCep(cep);
+        const data  = await resposta.json();
+        return data;
+
     }
     catch (error) {
-        console.error('não funcionou');
+        console.dir(error);
     }
+}
+
+function fillData(data) {
+    Object.entries(data).forEach(([key, content]) => {
+        let obj = document.querySelector('#' + key) ?? false;  
+        if (obj) {
+            obj.value = content;
+        }
+    });
 }
 
 let botao = document.querySelector('.btn');
 botao.addEventListener('click', (event) => {
-    executar();
+    let cep = document.querySelector("#cep").value;
+    let cache = sessionStorage.getItem('cep');
+    
+    if (!cache || JSON.parse(cache).cep !== cep) {
+        execute(cep).then(function (data) { 
+            console.log('Entrou')
+            sessionStorage.setItem('cep', JSON.stringify(data));
+            fillData(data);
+            
+        });
+    } else {
+        console.log('Cache')
+        fillData(JSON.parse(cache));
+    }
     event.preventDefault();
 });
 
 
 // salva dados na memoria do navegador
-localStorage.setItem('contador', 0);
-let contador = localStorage.getItem('contador');
-console.log(contador);
+// localStorage.setItem('contador', 0);
+// let contador = localStorage.getItem('contador');
+// console.log(contador);
 
 
 /*

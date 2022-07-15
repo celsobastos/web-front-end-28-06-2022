@@ -1,1 +1,8 @@
-Executando uma tarefa ajax fgdfgsdfgds.
+{
+    "m0": "A vida me ensinou que chorar alivia, mas sorrir torna tudo mais bonito.",
+    "m1": "Nunca troque o que você mais quer na vida pelo que você mais quer no momento",
+    "m2": "Ser uma pessoa melhor, não perfeito, apenas melhor que ontem!",
+    "m3": "Da vida não quero muito. Quero apenas saber que tentei tudo o que quis",
+    "m4": "Dê mais valor para quem se importa realmente com você. Assim terá mais motivos para ser feliz",
+    "m5": "Perder com classe e vencer com ousadia"
+}

@@ -17,11 +17,24 @@ function loadXMLDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);
-        //console.log(JSON.parse(this.responseText));
+        let data = JSON.parse(this.responseText);
+        let n = Math.round(Math.random(0,5) * 5);
+        document.querySelector('.lead').innerHTML = data['m'+ n]
       }
     };
-    xhttp.open("GET", "http://127.0.0.1:5501/src/content-ajax/content.txt", true);
+    xhttp.open("GET", "content-ajax/content.txt", true);
     xhttp.send();
 }
-loadXMLDoc();
+
+setInterval(loadXMLDoc, 5000);
+
+setInterval(() => { 
+    let times = new Date();
+    document.querySelector('.data-hora').innerHTML =
+    times;
+ }, 1000)
+
+
+// let test = '{"nome": "Maria"}';
+// let test2 = JSON.parse(test);
+// console.log(test2);
