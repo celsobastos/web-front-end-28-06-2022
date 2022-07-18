@@ -1,15 +1,33 @@
 $(function(){
-    $('.form-control:even').css('color', '#ff0000');
-    let display = $('.display-4');
-    let button = $('.btn-jquery');
 
+    let cep = $('#cep');
+    let tipo = cep.attr('type');
 
-    let texto = display.html();
-
-    if (texto.length <= 10) {
-        button.html(texto);
+    if(tipo == 'text') {
+        cep.attr('type', 'password');
     }
 
+
+    // $('.form-control:even').css('color', '#ff0000');
+    // let display = $('.display-4');
+    // let button = $('.btn-jquery');
+    // let cep = $('#cep');
+
+    // let tipo = cep.attr('type');
+
+    // display.addClass('h1');
+    // display.removeClass('display-4');
+
+
+    // let texto = display.html();
+
+    // if (texto.length <= 10) {
+    //     button.html(texto);
+    // }
+
+    // $('.btn-jquery').html(texto);
+
+    // document.querySelector('button').innerHTML = 'meu txto'
 
     //display.hide();
     // display.show();
