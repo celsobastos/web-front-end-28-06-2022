@@ -1,12 +1,32 @@
 $(function(){
 
     let cep = $('#cep');
-    let tipo = cep.attr('type');
+    cep.on('keyup', function () {
+        const cepVal = $(this).val();
+        if(cepVal.length === 8) {
+            $.get(`https://viacep.com.br/ws/${cepVal}/json/`, 
+            function(data, status){
+                console.log(data);
+            });
+        }
+    });
 
-    if(tipo == 'text') {
-        cep.attr('type', 'password');
-    }
+    const senha = $('#senha');
+    const check = $('#show');
+    check.on('click', function () {
+        if ($(this).is(':checked')) {
+            senha.attr('type','text');
+        } else {
+            senha.attr('type','password');
+        }
+    });
 
+    // let cep = $('#cep');
+    // let tipo = cep.attr('type');
+
+    // if(tipo == 'text') {
+    //     cep.attr('type', 'password');
+    // }
 
     // $('.form-control:even').css('color', '#ff0000');
     // let display = $('.display-4');
@@ -17,7 +37,6 @@ $(function(){
 
     // display.addClass('h1');
     // display.removeClass('display-4');
-
 
     // let texto = display.html();
 
@@ -44,7 +63,5 @@ $(function(){
     //         background: 'blue',
     //         width: '50%',
     //     }).fadeIn(3000).slideUp(2000);
-
-
 
 });
