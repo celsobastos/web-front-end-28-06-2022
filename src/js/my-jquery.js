@@ -3,13 +3,17 @@ $(function(){
     let cep = $('#cep');
     cep.on('keyup', function () {
         const cepVal = $(this).val();
-        if(cepVal.length === 8) {
+        if(cepVal.length === 9) {
             $.get(`https://viacep.com.br/ws/${cepVal}/json/`, 
             function(data, status){
-                console.log(data);
+                $('#logradouro').val(data.logradouro);
+                $('#complemento').val(data.complemento);
+                $('#bairro').val(data.bairro);
             });
         }
     });
+
+    $('#cep').mask('00000-000');
 
     const senha = $('#senha');
     const check = $('#show');
